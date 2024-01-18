@@ -7,8 +7,8 @@
 Для запуска обнаружения объектов в реальном времени используйте следующую команду:
 
 ```bash
-python real_time_object_detection.py --prototxt MobileNetSSD_deploy.prototxt.txt --model MobileNetSSD_deploy.caffemodel
-Убедитесь, что вы заменили MobileNetSSD_deploy.prototxt.txt и MobileNetSSD_deploy.caffemodel путями к вашему файлу 'deploy' prototxt и предварительно обученной модели.
+python object_detection.py --prototxt 1.prototxt.txt --model 1.caffemodel
+
 
 Зависимости
 imutils
@@ -16,8 +16,6 @@ numpy
 OpenCV
 Установите зависимости с помощью следующей команды:
 
-bash
-Copy code
 pip install imutils numpy opencv-python
 Настройка
 Измените уровень уверенности для слабых обнаружений, изменив аргумент -c или --confidence. По умолчанию установлено значение 0.2.
